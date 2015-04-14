@@ -21,7 +21,7 @@ func main() {
 	ui.UseTheme("helloworld")
 
 	p := ui.NewPar(":PRESS q TO QUIT DEMO")
-	p.Height = 3
+	p.Height =3 
 	p.Width = 50
 	p.Border.Label = "Text Box"
 
@@ -123,7 +123,7 @@ func main() {
 		ui.Render(p, list, g, sp, lc, bc, lc1, p1)
 	}
 
-	evt := EventCh()
+	evt := ui.EventCh()
 	i := 0
 	for {
 		select {
